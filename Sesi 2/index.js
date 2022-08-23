@@ -65,7 +65,6 @@ const animals = [{
 
 const getObjectBeingCategorized = (animals) => {
     // put logic here
-    const getObjectBeingCategorized = (animals)
     const data = {};
     for (const animal of animals) {
         if (!data.hasOwnProperty(animal.type))
