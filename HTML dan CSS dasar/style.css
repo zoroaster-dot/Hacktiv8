@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main-text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.author-text {
+    font-size: 22px;
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.my-blog {
+    position: relative;
+    background-color: lightblue;
+    width: 75%;
+    float: left;
+    padding-right: 20px;
+}
+
+.other-post {
+    background-color: lightgreen;
+    width: 25%;
+    float: left;
+}
+
+.author-box {
+    background-color: lightyellow;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.date {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+
+.post>*:first-child {
+    position: relative;
+    height: 14em;
+    background-color: black;
+}
+
+@media (min-width: 30em) {
+    .post>*:first-child {
+        height: 18em;
+    }
+}
+
+@media (min-width: 54em) {
+    .post>*:first-child {
+        flex-basis: 50%;
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media (min-width: 76.5em) {
+    .post>*:first-child {
+        flex-basis: 60%;
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 54em) {
+    .post>*:last-child {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 76.5em) {
+    .post>*:last-child {
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+}
